@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animated website </title>
+</head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        border: 0;
+        font-family: 'Rajdhani', sans-serif;
+    }
+
+    .navbar {
+        background-image: url('https://assets.teenvogue.com/photos/5d3dafccc08780000893b925/16:9/w_2560%2Cc_limit/CASSIE.jpg');
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    ul {
+        position: relative;
+        left: 1000px;
+    }
+
+    nav li {
+        display: inline;
+        margin-left: 20px;
+    }
+
+    nav li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    nav li a:hover {
+        color: antiquewhite;
+        text-decoration: underline;
+    }
+
+    .navigation {
+        position: fixed;
+    }
+
+    .textbox {
+        color: aliceblue;
+        position: absolute;
+        bottom: 8%;
+    }
+
+    .textbox p {
+        font-size: smaller;
+        font-weight: 600;
+    }
+
+    .textbox h1 {
+        font-size: 150px;
+        line-height: 160px;
+        margin-left: -10px;
+        color: transparent;
+        -webkit-text-stroke: 1px #fff;
+        position: relative;
+    }
+
+    span {
+        font-size: smaller;
+    }
+
+    a {
+        border: 1px solod white;
+    }
+
+    .row a {
+        border: 1px solid white;
+        margin: 5px;
+        padding: 3px;
+        color: rgb(48, 144, 144);
+        font-size: smaller;
+    }
+
+    .box {
+        /*border: 1px solid black;
+        background-color: white; if i will ad this i can see the line which is responsible for it*/
+        width: 200px;
+        height: 5px;
+        position: relative;
+        animation-name: daizy;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+
+    }
+
+    @keyframes daizy {
+
+        /* from{
+        width: 200px;
+        }
+        to{
+        width: 100px;
+        }*/
+        0% {
+            margin-top: 10%;
+            width: 20%;
+            left: 2%;
+        }
+
+        25% {
+            border: 5%;
+            width: 30%;
+            margin-bottom: 6%;
+        }
+
+        50% {
+            margin-left: 5%
+        }
+
+        70% {
+            margin-top: 30%;
+        }
+
+    }
+
+    .new p {
+        color: rgb(0, 0, 0);
+    }
+
+    #found h1 {
+        border: 2px solid blue;
+        background-image: url('https://www.realsimple.com/thmb/FFmDNtu4-Yd0Ylxycl-7GFFKu2g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/foundation-color-match-2000-0975a77644d5416199887a05a1c7d500.jpg');
+        height: 600px;
+        text-align: center;
+        position: relative;
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="textbox">
+            <p>I AM</p>
+            <h1>Daizy</h1>
+            <div class="box">
+            </div>
+            <br>
+            <p>I CAN GUIDE YOU FOR BEAUTY PRODUCTS !</p>
+            <div class="row">
+                <a href="">Explore My Portfolio</a>
+                <a href="">Connect with me</a>
+                <span>You can exlore more about beauty product and get to know more about me</span>
+            </div>
+        </div>
+    </div>
+    <div class="new" id="found">
+        <h1>foundation</h1>
+    </div>
+    <div class="p">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nam architecto debitis assumenda labore
+            aut unde ipsam harum sit vero modi amet voluptate ratione neque veniam cum minima odio nulla molestias,
+            magni animi id reprehenderit repellat facilis? Nulla quis tempora blanditiis excepturi amet voluptate quam
+            sunt adipisci! Quo, optio. Cupiditate, in aliquid dignissimos ipsum eligendi hic dolor debitis id
+            voluptatum!</p>
+    </div>
+    <div class="new" id="l">
+        <h1>lipstic</h1>
+    </div>
+    <div class="p">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nam architecto debitis assumenda labore
+            aut unde ipsam harum sit vero modi amet voluptate ratione neque veniam cum minima odio nulla molestias,
+            magni animi id reprehenderit repellat facilis? Nulla quis tempora blanditiis excepturi amet voluptate quam
+            sunt adipisci! Quo, optio. Cupiditate, in aliquid dignissimos ipsum eligendi hic dolor debitis id
+            voluptatum!</p>
+    </div>
+    <div class="new" id="e">
+        <h1>Eyeshadow</h1>
+    </div>
+    <div class="p">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nam architecto debitis assumenda labore
+            aut unde ipsam harum sit vero modi amet voluptate ratione neque veniam cum minima odio nulla molestias,
+            magni animi id reprehenderit repellat facilis? Nulla quis tempora blanditiis excepturi amet voluptate quam
+            sunt adipisci! Quo, optio. Cupiditate, in aliquid dignissimos ipsum eligendi hic dolor debitis id
+            voluptatum!</p>
+    </div>
+
+    <div class="new" id="b">
+        <h1>Blush</h1>
+    </div>
+    <div class="p">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nam architecto debitis assumenda labore
+            aut unde ipsam harum sit vero modi amet voluptate ratione neque veniam cum minima odio nulla molestias,
+            magni animi id reprehenderit repellat facilis? Nulla quis tempora blanditiis excepturi amet voluptate quam
+            sunt adipisci! Quo, optio. Cupiditate, in aliquid dignissimos ipsum eligendi hic dolor debitis id
+            voluptatum!</p>
+    </div>
+</body>
+
+</html>
